@@ -6,6 +6,6 @@ RUN pip install mkdocs
 
 COPY project ./
 
-EXPOSE 8010
+EXPOSE 8080
 
-CMD ["mkdocs", "serve", "-a", "0.0.0.0:8010"]
+CMD ["mkdocs", "serve", "-a", "0.0.0.0:8080"] 
