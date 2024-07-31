@@ -1,0 +1,11 @@
+version: '2.9'
+services:
+
+  mkdocs:
+    build: .
+    ports:
+      - 8010:8010
+    volumes:
+      - ./project:/app
+    command: mkdocs serve -a 0.0.0.0:8010
+
